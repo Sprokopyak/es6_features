@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <title>ES next features</title>
+</head>
+
+<body>
+    <h4>ES6 features</h4>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th class="info">Feature</th>
+                <th class="info">Descrption</th>
+                <th class="info">Code</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Let + Const</td>
+                <td>Block-scoped binding constructs. let is the new var. const is single-assignment. Static restrictions prevent
+                    use before assignment.</td>
+                <td>
+                    <script src="https://gist.github.com/Sprokopyak/55c1fa6dbff01a67e8986a75717a6973.js"></script>
+                </td>
+            </tr>
+            <tr>
+                <td>Destructuring</td>
+                <td>Destructuring assignment is a special syntax that allows us to “unpack” arrays or objects into a bunch of
+                    variables, as sometimes they are more convenient. </td>
+                <td>
+                    <script src="https://gist.github.com/Sprokopyak/2a778b74f49a63f882f718803fee9357.js"></script>
+                </td>
+            </tr>
+            <tr>
+                <td>Rest </td>
+                <td>Rest parameters are indicated by three dots … preceding a parameter. Named parameter becomes an array which
+                    contain the rest of the parameters.</td>
+                <td>
+                    <script src="https://gist.github.com/Sprokopyak/02e980275d8ddba1d4653d5f59d8ee80.js"></script>
+                </td>
+            </tr>
+            <tr>
+                <td>Spread </td>
+                <td>The spread is closely related to rest parameters, because of … (three dots) notation. It allows to split
+                    an array to single arguments which are passed to the function as separate arguments.</td>
+                <td>
+                    <script src="https://gist.github.com/Sprokopyak/b3e849bf413254eb50ff343b90058d46.js"></script>
+                </td>
+            </tr>
+            <tr>
+                <td>Default value</td>
+                <td>ES6 gives us a way to set default function parameters. Any parameters with a default value are considered
+                    to be optional.</td>
+                <td>
+                    <script src="https://gist.github.com/Sprokopyak/a81d80d612493434807802460262b68b.js"></script>
+                </td>
+            </tr>
+            <tr>
+                <td>for…of </td>
+                <td>Using for…of we can iterate over the values in an iterable, like an array, string, arguments, object</td>
+                <td>
+                    <script src="https://gist.github.com/Sprokopyak/3a583b5558043821e552251ab98177c0.js"></script>
+                </td>
+            </tr>
+            <tr>
+                <td>Map </td>
+                <td>Map - колекція для зберігання записів виду ключ: значення На відміну від об'єктів, в яких ключами можуть
+                    бути тільки стрінга, в Map ключем може бути довільне значення навіть намбер map.delete (keys) видаляє
+                    запис з ключем key, повертає true, якщо такий запис був, інакше false.
+                    <br> map.clear () - видаляє всі записи, очищає map.
+                    <br> map.keys () - повертає ітеріруемий об'єкт для ключів,
+                    <br> map.values () - повертає ітеріруемий об'єкт для значень,
+                    <br>
+                </td>
+                <td>
+                    <script src="https://gist.github.com/Sprokopyak/fbdfee0e2467fa8702a8d188b1e49a47.js"></script>
+                </td>
+            </tr>
+            <tr>
+                <td>Set </td>
+                <td>Set - колекція для зберігання безлічі значень, причому кожне значення може зустрічатися лише один раз, тобто
+                    має бути унікальним, має ті ж методи, що і Map</td>
+                <td>
+                    <script src="https://gist.github.com/Sprokopyak/dcf63030e3f1efd62cd059acea76d374.js"></script>
+                </td>
+            </tr>
+            <tr>
+                <td>WeakMap і WeakSet</td>
+                <td>WeakMap і WeakSet - «урізані» по функціоналу варіанти Map / Set, які дозволяють тільки «точково» звертатися
+                    до елементів (по конкретному ключу або значенням). Іншими словами, WeakMap/WeakSet працює тільки на запис
+                    (set, delete) і читання (get, has) елементів по конкретному ключу, можна додавати елементи, перевіряти
+                    їх наявність, але не можна отримати їх список і навіть дізнатися кількість. </td>
+
+                <td>
+                    <script src="https://gist.github.com/Sprokopyak/5c320fbf17cec52866e832589398d905.js"></script>
+                </td>
+            </tr>
+            <tr>
+                <td>Arrow Functions </td>
+                <td>Arrow Functions don't have their own context this and arguments, they take this, arguments from outer context.</td>
+                <td>
+                    <script src="https://gist.github.com/Sprokopyak/139197cf0f3143a2ea4aa6eca09bf118.js"></script>
+                </td>
+            </tr>
+            <tr>
+                <td>Classes</td>
+                <td>ES6 classes are a simple sugar over the prototype-based OO pattern. Having a single convenient declarative
+                    form makes class patterns easier to use, and encourages interoperability. Classes support prototype-based
+                    inheritance, super calls, to instantiate parent properties. </td>
+                <td>
+                    <script src="https://gist.github.com/Sprokopyak/4530333f014af87588b80235eaa5b1b5.js"></script>
+                </td>
+            </tr>
+            <tr>
+                <td>Promises </td>
+                <td>Promise gives us control over our async function and allows us to either resolve or reject an operation request.</td>
+                <td>
+                    <script src="https://gist.github.com/Sprokopyak/25c320250f777cd8d2311b71c60e02e9.js"></script>
+                </td>
+            </tr>
+            <tr>
+                <td>Modules in ES6 </td>
+                <td>There were no native modules support in JavaScript before ES6, in ES5 you would use tags with IIFE, or some
+                    library like AMD, while in ES6 you can use modules with IMPORT and EXPORT operands</td>
+                <td>
+                    <script src="https://gist.github.com/Sprokopyak/26403b28802819a8154374ac799912b4.js"></script>
+                </td>
+            </tr>
+            <tr>
+                <td>String Interpolation </td>
+                <td>Intuitive expression interpolation for single-line and multi-line strings. </td>
+                <td>
+                    <script src="https://gist.github.com/Sprokopyak/2a5708adf91bf942ff95aa03e0188da0.js"></script>
+                </td>
+            </tr>
+            <tr>
+                <td>Generators </td>
+                <td>Генератори - новий вид функцій в сучасному JavaScript. Вони відрізняються від звичайних тим, що можуть призупиняти
+                    своє виконання, повертати проміжний результат і далі відновлювати його пізніше, в довільний момент часу.
+                    <br> Для оголошення генератора використовується нова синтаксична конструкція: function *
+                    <br>Основним методом генератора є next (). При виклику він відновлює виконання коду до найближчого ключового
+                    слова yield. Після досягнення yield виконання призупиняється, а значення - повертається в зовнішній код.
+                    Повторний виклик generator.next () відновить виконання і поверне результат наступного yield.І, нарешті,
+                    останній виклик завершить виконання функції і поверне результат return.
+                    <br>Функція завершена. Зовнішній код повинен побачити це з властивості done: true і обробити value: 3, як
+                    остаточний результат. Нові виклики generator.next () більше не мають сенсу. Втім, якщо вони і будуть,
+                    то не викличуть помилки, але будуть повертати один і той же об'єкт: {done: true}.</td>
+                <td>
+                    <script src="https://gist.github.com/Sprokopyak/c80d44ceb6bdcca858afb8c792f4f48f.js"></script>
+                </td>
+            </tr>
+            <tr>
+                <td>find </td>
+                <td>Lets you iterate through an array and get the first element back that causes the given callback function
+                    to return true. Once an element has been found, the function immediately returns. It’s an efficient way
+                    to get at just the first item that matches a given condition.</td>
+                <td>
+                    <script src="https://gist.github.com/Sprokopyak/01b61b30e326ff3d7a1789b207cc6ac4.js"></script>
+                </td>
+            </tr>
+            <tr>
+                <td>findIndex </td>
+                <td>FindIndex behaves similar to find, but instead of returning the element that matched, it returns the index
+                    of that element.</td>
+                <td>
+                    <script src="https://gist.github.com/Sprokopyak/468a768f89ace1d7fdd6407c96383bd0.js"></script>
+                </td>
+            </tr>
+            <tr>
+                <td>Array.from </td>
+                <td>Array.from() enables the creation of a new array from an array like object. </td>
+                <td>
+                    <script src="https://gist.github.com/Sprokopyak/0f0458901071bc858849a05a2a404d24.js"></script>
+                </td>
+            </tr>
+            <tr>
+                <td>Array.of </td>
+                <td>Array.of () create a new instance of Array with an arbitrary number of arguments, regardless of the number
+                    or type of argument.</td>
+                <td>
+                    <script src="https://gist.github.com/Sprokopyak/64c80af2badaf6152b8618f7ec1e1bfe.js"></script>
+                </td>
+            </tr>
+            <tr>
+                <td>fill </td>
+                <td>Fills an array with the given value</td>
+                <td>
+                    <script src="https://gist.github.com/Sprokopyak/c3202deae73697311c6e923962606201.js"></script>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <hr>
+    <h4>ES7 - ES8 features</h4>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th class="info">Feature</th>
+                <th class="info">Descrption</th>
+                <th class="info">Code</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>includes </td>
+                <td>Checks the array for the value passed as an argument. It returns true if the array contains the value, otherwise,
+                    it returns false.</td>
+                <td>
+                    <script src="https://gist.github.com/Sprokopyak/1dc3d53ed47f5ce66e41eb3b18a237c8.js"></script>
+                </td>
+            </tr>
+            <tr>
+                <td>String padding </td>
+                <td>This section adds two functions to the String object: padStart & padEnd. As their names, the purpose of those
+                    functions is to pad the start or the end of the string, so that the resulting string reaches the given
+                    length.
+                </td>
+                <td>
+                    <script src="https://gist.github.com/Sprokopyak/344215f8e4d1fca836bacca7b983a312.js"></script>
+                </td>
+            </tr>
+            <tr>
+                <td>Object.values</td>
+                <td>The Object.values method returns an array of a given object’s own enumerable property values, in the same
+                    order as that provided by a for in loop. </td>
+                <td>
+                    <script src="https://gist.github.com/Sprokopyak/75a10460b6b967d1abce46f1ac0620f9.js"></script>
+                </td>
+            </tr>
+            <tr>
+                <td>Object.entries </td>
+                <td>The Object.entries method returns an array of a given object's own enumerable property [key, value] pairs,
+                    in the same order as Object.values. </td>
+                <td>
+                    <script src="https://gist.github.com/Sprokopyak/9a17b29c2259b30714cafe3ac7891db9.js"></script>
+                </td>
+            </tr>
+            <tr>
+                <td>Object.getOwnPropertyDescriptors</td>
+                <td>The getOwnPropertyDescriptors method returns all of the own properties descriptors of the specified object.
+                    An own property descriptor is one that is defined directly on the object and is not inherited from the
+                    object’s prototype. </td>
+                <td>
+                    <script src="https://gist.github.com/Sprokopyak/119e8078db45dc164956e292525db403.js"></script>
+                </td>
+            </tr>
+            <tr>
+                <td>Trailing commas in function parameter lists and calls </td>
+                <td>Trailing commas in function parameter is the ability of the compiler not to raise an error (SyntaxError)
+                    when we add an unnecessary comma in the end of the list</td>
+                <td>
+                    <script src="https://gist.github.com/Sprokopyak/4ee8d37b83f9a81beb92906b3b468c53.js"></script>
+                </td>
+            </tr>
+            <tr>
+                <td>Promise.Prototype.finally </td>
+                <td>finally() method, which is a callback function for when the Promise is fulfilled or rejected. We can expect
+                    the same behavior of the try/catch/finally, where finally will always be executed</td>
+                <td>
+                    <script src="https://gist.github.com/Sprokopyak/3f0d36e71877f39b81bdbf45327948c9.js"></script>
+                </td>
+            </tr>
+            <tr>
+                <td>async/await </td>
+                <td> - async is a keyword for the function declaration
+                    <br> - await is used during the promise handling
+                    <br> - await must be used within an async function, though Chrome now supports "top level" await
+                    <br> - async functions return a promise, regardless of what the return value is within the function
+                    <br> - async/await and promises are essentially the same under the hood</td>
+                <td>
+                    <script src="https://gist.github.com/Sprokopyak/df3a4343d9ffb51973bf4de326ca1867.js"></script>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
